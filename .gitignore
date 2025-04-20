@@ -33,3 +33,11 @@ pids
 .vscode/
 *.swp
 *.swo 
+
+# Local MCP config and registration files
+mcp.json
+registration.json
+
+# Test scripts (optional, remove these lines if you want to include them)
+test-api.js
+test-cursor.js
