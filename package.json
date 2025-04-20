@@ -1,23 +1,36 @@
 {
   "name": "mcp-server",
   "version": "1.0.0",
-  "description": "MCP server for interacting with Monad Testnet",
+  "description": "Monad Chain Protocol Server",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "register": "node register-mcp.js"
   },
-  "keywords": ["mcp", "monad", "blockchain", "web3"],
+  "keywords": [
+    "monad",
+    "blockchain",
+    "web3"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "web3": "^4.5.0",
-    "dotenv": "^16.4.1",
+    "axios": "^1.6.7",
+    "chalk": "^5.4.1",
     "cors": "^2.8.5",
-    "helmet": "^7.1.0"
+    "dotenv": "^16.4.1",
+    "ethers": "^6.11.1",
+    "express": "^4.18.2",
+    "express-sse": "^1.0.0",
+    "helmet": "^7.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "web3": "^4.4.0",
+    "winston": "^3.11.0",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
